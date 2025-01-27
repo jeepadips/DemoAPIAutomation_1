@@ -4,6 +4,10 @@
   <test thread-count="5" name="API Tests">
       <classes>
         <class name ="com.api.test.LoginAPITest3" />
+          <class name ="com.api.test.AccountCreationTest" />
+          <class name ="com.api.test.ForgotPasswordTest" />
+          <class name ="com.api.test.GetProfileRequestTest" />
+          <class name ="com.api.test.UpdateProfileTest" />
       </classes>
   </test>
 </suite>

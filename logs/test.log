@@ -225,3 +225,240 @@ Connection=keep-alive
 }
 13:59:53.372 [main] INFO  com.api.listeners.TestListener - Passed!!! loginTest
 13:59:53.416 [main] INFO  com.api.listeners.TestListener - Test Suite Completed!!!
+14:30:54.174 [main] INFO  com.api.listeners.TestListener - Test Suite Started!!!
+14:30:54.245 [main] INFO  com.api.listeners.TestListener - Started!!! createAccount
+14:30:54.246 [main] INFO  com.api.listeners.TestListener - Description!!! Verify if new Account creation is working as expected
+14:30:56.591 [main] INFO  com.api.filters.LoggingFilter - BASE URI:http://64.227.160.186:8080
+14:30:56.592 [main] INFO  com.api.filters.LoggingFilter - Request Header:Accept=*/*
+Content-Type=application/json
+14:30:56.592 [main] INFO  com.api.filters.LoggingFilter - Request Payload:{"username":"Dishaa584","password":"dishaa123","email":"dishaa584@yahoo.com","firstName":"Dishaa","lastName":"Bhatt","mobileNumber":"9022374389"}
+14:30:58.082 [main] INFO  com.api.filters.LoggingFilter - STATUS CODE:400
+14:30:58.083 [main] INFO  com.api.filters.LoggingFilter - Response Header:Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Type=text/plain;charset=UTF-8
+Content-Length=33
+Date=Mon, 27 Jan 2025 18:30:56 GMT
+Connection=close
+14:30:58.149 [main] INFO  com.api.filters.LoggingFilter - Response Body:Error: Username is already taken!
+14:30:58.157 [main] INFO  com.api.listeners.TestListener - Passed!!! createAccount
+14:30:58.162 [main] INFO  com.api.listeners.TestListener - Test Suite Completed!!!
+14:38:26.942 [main] INFO  com.api.listeners.TestListener - Test Suite Started!!!
+14:38:27.006 [main] INFO  com.api.listeners.TestListener - Started!!! forgotPassword
+14:38:27.007 [main] INFO  com.api.listeners.TestListener - Description!!! Verify if Forgot Password API is working
+14:38:29.251 [main] INFO  com.api.filters.LoggingFilter - BASE URI:http://64.227.160.186:8080
+14:38:29.252 [main] INFO  com.api.filters.LoggingFilter - Request Header:Accept=*/*
+Content-Type=application/json
+14:38:29.252 [main] INFO  com.api.filters.LoggingFilter - Request Payload:{"email":"testing12334@mailinator.com"}
+14:38:30.736 [main] INFO  com.api.filters.LoggingFilter - STATUS CODE:200
+14:38:30.737 [main] INFO  com.api.filters.LoggingFilter - Response Header:Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Type=application/json
+Transfer-Encoding=chunked
+Date=Mon, 27 Jan 2025 18:38:29 GMT
+Keep-Alive=timeout=60
+Connection=keep-alive
+14:38:30.832 [main] INFO  com.api.filters.LoggingFilter - Response Body:{
+    "message": "If your email exists in our system, you will receive reset instructions."
+}
+14:38:30.949 [main] INFO  com.api.listeners.TestListener - Passed!!! forgotPassword
+14:38:30.954 [main] INFO  com.api.listeners.TestListener - Test Suite Completed!!!
+14:39:54.591 [main] INFO  com.api.listeners.TestListener - Test Suite Started!!!
+14:39:54.657 [main] INFO  com.api.listeners.TestListener - Started!!! getProfileInfoTest
+14:39:54.658 [main] INFO  com.api.listeners.TestListener - Description!!! verifying Get Profile API
+14:39:57.162 [main] INFO  com.api.filters.LoggingFilter - BASE URI:http://64.227.160.186:8080
+14:39:57.165 [main] INFO  com.api.filters.LoggingFilter - Request Header:Accept=*/*
+Content-Type=application/json
+14:39:57.166 [main] INFO  com.api.filters.LoggingFilter - Request Payload:{"username":"testing1234","password":"testing1234"}
+14:39:58.807 [main] INFO  com.api.filters.LoggingFilter - STATUS CODE:200
+14:39:58.808 [main] INFO  com.api.filters.LoggingFilter - Response Header:Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Type=application/json
+Transfer-Encoding=chunked
+Date=Mon, 27 Jan 2025 18:39:57 GMT
+Keep-Alive=timeout=60
+Connection=keep-alive
+14:39:58.897 [main] INFO  com.api.filters.LoggingFilter - Response Body:{
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0aW5nMTIzNCIsImlhdCI6MTczODAwMzE5NywiZXhwIjoxNzM4MDA2Nzk3fQ.tPbubUoOy_nF9pdl8E-Om_k8Gp_4OIdC0wh-NVULHvI",
+    "type": "Bearer",
+    "id": 819,
+    "username": "testing1234",
+    "email": "testing321@mailinator.com",
+    "roles": [
+        "ROLE_USER"
+    ]
+}
+14:39:59.011 [main] INFO  com.api.filters.LoggingFilter - BASE URI:http://64.227.160.186:8080
+14:39:59.012 [main] INFO  com.api.filters.LoggingFilter - Request Header:Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0aW5nMTIzNCIsImlhdCI6MTczODAwMzE5NywiZXhwIjoxNzM4MDA2Nzk3fQ.tPbubUoOy_nF9pdl8E-Om_k8Gp_4OIdC0wh-NVULHvI
+Accept=*/*
+14:39:59.012 [main] INFO  com.api.filters.LoggingFilter - Request Payload:null
+14:39:59.676 [main] INFO  com.api.filters.LoggingFilter - STATUS CODE:200
+14:39:59.677 [main] INFO  com.api.filters.LoggingFilter - Response Header:Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Type=application/json
+Transfer-Encoding=chunked
+Date=Mon, 27 Jan 2025 18:39:58 GMT
+Keep-Alive=timeout=60
+Connection=keep-alive
+14:39:59.679 [main] INFO  com.api.filters.LoggingFilter - Response Body:{
+    "id": 819,
+    "username": "testing1234",
+    "email": "testing321@mailinator.com",
+    "firstName": "testing123",
+    "lastName": "testing321",
+    "mobileNumber": "1234567890"
+}
+14:39:59.692 [main] INFO  com.api.listeners.TestListener - Passed!!! getProfileInfoTest
+14:39:59.697 [main] INFO  com.api.listeners.TestListener - Test Suite Completed!!!
+14:40:10.165 [main] INFO  com.api.listeners.TestListener - Test Suite Started!!!
+14:40:10.234 [main] INFO  com.api.listeners.TestListener - Started!!! updateProfileTest
+14:40:10.235 [main] INFO  com.api.listeners.TestListener - Description!!! verifying Update profile API
+14:40:12.597 [main] INFO  com.api.filters.LoggingFilter - BASE URI:http://64.227.160.186:8080
+14:40:12.598 [main] INFO  com.api.filters.LoggingFilter - Request Header:Accept=*/*
+Content-Type=application/json
+14:40:12.598 [main] INFO  com.api.filters.LoggingFilter - Request Payload:{"username":"testing1234","password":"testing1234"}
+14:40:14.105 [main] INFO  com.api.filters.LoggingFilter - STATUS CODE:200
+14:40:14.105 [main] INFO  com.api.filters.LoggingFilter - Response Header:Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Type=application/json
+Transfer-Encoding=chunked
+Date=Mon, 27 Jan 2025 18:40:12 GMT
+Keep-Alive=timeout=60
+Connection=keep-alive
+14:40:14.178 [main] INFO  com.api.filters.LoggingFilter - Response Body:{
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0aW5nMTIzNCIsImlhdCI6MTczODAwMzIxMiwiZXhwIjoxNzM4MDA2ODEyfQ.rQEEZhA_2UAzMp5mksVOmwZ19JLpl0TQ_s-lQQJqRXs",
+    "type": "Bearer",
+    "id": 819,
+    "username": "testing1234",
+    "email": "testing321@mailinator.com",
+    "roles": [
+        "ROLE_USER"
+    ]
+}
+14:40:14.300 [main] INFO  com.api.filters.LoggingFilter - BASE URI:http://64.227.160.186:8080
+14:40:14.300 [main] INFO  com.api.filters.LoggingFilter - Request Header:Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0aW5nMTIzNCIsImlhdCI6MTczODAwMzIxMiwiZXhwIjoxNzM4MDA2ODEyfQ.rQEEZhA_2UAzMp5mksVOmwZ19JLpl0TQ_s-lQQJqRXs
+Accept=*/*
+14:40:14.300 [main] INFO  com.api.filters.LoggingFilter - Request Payload:null
+14:40:14.938 [main] INFO  com.api.filters.LoggingFilter - STATUS CODE:200
+14:40:14.938 [main] INFO  com.api.filters.LoggingFilter - Response Header:Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Type=application/json
+Transfer-Encoding=chunked
+Date=Mon, 27 Jan 2025 18:40:13 GMT
+Keep-Alive=timeout=60
+Connection=keep-alive
+14:40:14.940 [main] INFO  com.api.filters.LoggingFilter - Response Body:{
+    "id": 819,
+    "username": "testing1234",
+    "email": "testing321@mailinator.com",
+    "firstName": "testing123",
+    "lastName": "testing321",
+    "mobileNumber": "1234567890"
+}
+14:40:14.961 [main] INFO  com.api.filters.LoggingFilter - BASE URI:http://64.227.160.186:8080
+14:40:14.961 [main] INFO  com.api.filters.LoggingFilter - Request Header:Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0aW5nMTIzNCIsImlhdCI6MTczODAwMzIxMiwiZXhwIjoxNzM4MDA2ODEyfQ.rQEEZhA_2UAzMp5mksVOmwZ19JLpl0TQ_s-lQQJqRXs
+Accept=*/*
+Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0aW5nMTIzNCIsImlhdCI6MTczODAwMzIxMiwiZXhwIjoxNzM4MDA2ODEyfQ.rQEEZhA_2UAzMp5mksVOmwZ19JLpl0TQ_s-lQQJqRXs
+Content-Type=application/json
+14:40:14.962 [main] INFO  com.api.filters.LoggingFilter - Request Payload:{"firstName":"testing123","lastName":"testing321","email":"testing321@mailinator.com","mobileNumber":"1234567890"}
+14:40:15.595 [main] INFO  com.api.filters.LoggingFilter - STATUS CODE:200
+14:40:15.595 [main] INFO  com.api.filters.LoggingFilter - Response Header:Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Type=application/json
+Transfer-Encoding=chunked
+Date=Mon, 27 Jan 2025 18:40:14 GMT
+Keep-Alive=timeout=60
+Connection=keep-alive
+14:40:15.599 [main] INFO  com.api.filters.LoggingFilter - Response Body:{
+    "id": 819,
+    "username": "testing1234",
+    "email": "testing321@mailinator.com",
+    "firstName": "testing123",
+    "lastName": "testing321",
+    "mobileNumber": "1234567890"
+}
+14:40:15.606 [main] INFO  com.api.listeners.TestListener - Passed!!! updateProfileTest
+14:40:15.613 [main] INFO  com.api.listeners.TestListener - Test Suite Completed!!!
